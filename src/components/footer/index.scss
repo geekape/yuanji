@@ -1,0 +1,16 @@
+@import '../../styles/components/flex.scss';
+
+.footer {
+  height: px(150);
+  width: 100%;
+  background: $color-bg-white;
+  position: fixed;
+  bottom: 0;
+}
+
+.add-btn {
+  width: px(90);
+  height: px(90);
+  background-size: 100%;
+  margin: 0 px(60);
+}

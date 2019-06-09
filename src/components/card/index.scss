@@ -1,0 +1,21 @@
+@import '../../styles/components/flex.scss';
+
+.card {
+  height: px(266);
+  width: px(222);
+  padding: px(15);
+  box-sizing: border-box;
+  background: $color-bg-white;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+  border-radius: px(20);
+  
+  &-head {
+    @include display-flex();
+    @extend .ym-row__direction--column;
+
+    &__view {
+      font-size: 12PX;
+      color: $color-gray-2;
+    }
+  }
+}

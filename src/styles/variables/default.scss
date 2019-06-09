@@ -1,6 +1,31 @@
+@charset "UTF-8";
+
 /**
  * Default variables
  */
 
  
  /* color */
+ $color-green: #00c17d !default;
+ $color-red: #ff2436 !default;
+ $color-blue: #0d1051 !default;
+ $color-white: #fff !default;
+ 
+ $color-black-0: #000 !default;
+ $color-black-1: #333 !default;
+ $color-black-2: #5d595e !default;
+ $color-black-3: #646464 !default;
+ 
+ $color-gray-0: #fefefe !default;
+ $color-gray-1: #bababa !default;
+ $color-gray-2: #c7c7c7 !default;
+ $color-gray-3: #d8d8d8 !default;
+ 
+ 
+ /* 背景色 */
+ $color-bg-gray: $color-gray-0;
+ $color-bg-white: $color-white;
+ 
+ 
+ /* 边框颜色 */
+ $color-border: $color-gray-3;

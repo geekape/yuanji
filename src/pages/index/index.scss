@@ -1,4 +1,50 @@
+@import '../../styles/components/flex.scss';
+
+
 .index {
-  background: #FEFEFE;
+  background: $color-bg-gray;
   height: 100vh;
+  position: relative;
+  &-bg {
+    position: absolute;
+    left: 0;
+    top: px(40);
+    z-index: 1;
+    width: 672px;
+    height: 668px;
+  }
+
+  .sub-title {
+    font-size: 12PX;
+  }
+  
+  .title {
+    font-size: 20PX;
+    margin-bottom: 10px;
+  }
+}
+
+.container {
+  padding-top: px(80);
+  position: relative;
+}
+
+/* 卡片轮播　*/
+.scrollview-card {
+  white-space: nowrap;
+  width: 100%;
+  @include display-flex();
+  height: px(266);
+  position: relative;
+  z-index: 11;
+
+  .card {
+    &:first-child {
+      margin-left: px(20);
+    }
+    margin-right: px(15);
+      &:last-child {
+        margin-right: px(20);
+      }
+  }
 }

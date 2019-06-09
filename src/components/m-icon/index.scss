@@ -1,0 +1,23 @@
+@import '../../styles/components/flex.scss';
+
+@mixin background($image, $w, $h:$w) {
+    background: url($image) no-repeat;
+    width: $w;
+    height: $h;
+    background-size: 100%;
+}
+
+.icon {
+  
+  &-data {
+    @include background('../../assets/img/icon-data.png', 50px, 46px)
+  }
+
+  &-home {
+    @include background('../../assets/img/icon-home.png', 44px)
+  }
+
+  &-person {
+    @include background('../../assets/img/icon-person.png', 44px)
+  }
+}

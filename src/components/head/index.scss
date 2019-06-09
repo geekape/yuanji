@@ -1,19 +1,24 @@
-@import '../../styles/mixins/px.scss';
+@import '../../styles/components/flex.scss';
 
 .head {
   padding: px(30) px(20);
   background: #fff;
-  &-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   &-img {
+    z-index: 9;
     width: px(45);
     height: px(45);
     border-radius: 10px;
     background: #eee;
-    box-shadow: rgba(0,0,0,.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
   }
+  &-text {
+    margin-top: px(15);
+    position: absolute;
+    z-index: 2;
+    @include display-flex();
+    @extend .ym-row__direction--column;
+  }
+
+  
 }

@@ -1,7 +1,14 @@
-* {
+body,
+html,
+image,
+View,
+div {
   padding: 0;
   margin: 0;
 }
 
-
-
+.taro-img,
+Image {
+  height: auto;
+  width: auto;
+}
