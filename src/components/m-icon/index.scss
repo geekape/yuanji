@@ -20,4 +20,16 @@
   &-person {
     @include background('../../assets/img/icon-person.png', 44px)
   }
+
+  &-close {
+    @include background('../../assets/img/icon-close.png', 32px)
+  }
+
+  &-clock {
+    @include background('../../assets/img/icon-clock.png', 38px)
+  }
+
+  &-tag {
+    @include background('../../assets/img/icon-tag.png', 38px)
+  }
 }

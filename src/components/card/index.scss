@@ -13,6 +13,10 @@
     @include display-flex();
     @extend .ym-row__direction--column;
 
+    &__title {
+      font-size: 20PX;
+    }
+
     &__view {
       font-size: 12PX;
       color: $color-gray-2;

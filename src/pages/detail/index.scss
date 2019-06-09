@@ -1,0 +1,28 @@
+@import '../../styles/components/flex.scss';
+
+
+.detail {
+  background: $color-bg-gray;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .sub-title {
+    font-size: 12PX;
+  }
+  
+  .title {
+    font-size: 20PX;
+    margin-bottom: 10px;
+  }
+}
+
+.container {
+  padding: px(15);
+  padding-bottom: 0;
+  position: relative;
+}
+
+.todo-list {
+  margin-top: px(30);
+}

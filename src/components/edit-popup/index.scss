@@ -1,0 +1,52 @@
+@import '../../styles/components/flex.scss';
+
+.edit-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: $color-white;
+  z-index: 19;
+  padding: px(20);
+}
+
+.edit-textarea {
+  font-size: 30PX;
+  margin-top: px(20);
+  width: 100%;
+  min-height: 300px;
+  border: 0;
+  outline: none;
+}
+
+.edit-btn {
+  background: $color-green;
+  box-shadow: 0 0 20PX rgba($color-green, .3);
+  border: 0;
+  position: fixed;
+  bottom: px(20);
+  color: $color-white;
+  width: 90%;
+}
+
+
+.ym-list {
+
+  &__item {
+    @include display-flex();
+    @extend .ym-row__align--center;
+    height: px(45);
+    margin-left: px(-20);
+    margin-right: px(-20);
+    padding: 0 px(20);
+    &:active {
+      background: $color-gray-0;
+    }
+    &-title {
+      font-size: 14PX;
+      margin-left: px(20);
+    }
+  }
+}

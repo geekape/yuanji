@@ -6,15 +6,15 @@ import './index.scss'
 
 function TodoItem() {
 
-  const {value, checked} = this.props
+  const {value, checked, time} = this.props
   return (
     <View className='todo-item ym-row'>
       <View className='ym-row ym-row__direction--column'>
         <Label className='ym-row ym-row__align--center'>
           <Checkbox value={value} checked={checked} />
-          <Text className='todo-item__title'>查看Vue官方文档</Text>
+          <Text className={checked ? 'todo-item__title active' : 'todo-item__title'}>{value}</Text>
         </Label>
-        <Text className='todo-item__time'>10:00</Text>
+        <Text className='todo-item__time'>{time}</Text>
       </View>
     </View>
   )

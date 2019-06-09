@@ -39,12 +39,6 @@
   z-index: 11;
 
   .card {
-    &:first-child {
-      margin-left: px(20);
-    }
-    margin-right: px(15);
-      &:last-child {
-        margin-right: px(20);
-      }
+   margin-right: px(15);
   }
 }
